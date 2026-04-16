@@ -469,6 +469,18 @@ p{
     cursor: not-allowed;
     background: #ccc; /* Makes the button gray when disabled */
 }
+
+.nav-links ul li a.active {
+    color: #f44336; /* Makes the text red */
+    font-weight: bold;
+}
+
+/* Optional: Make the underline effect stay visible for the active link */
+.nav-links ul li a.active::after {
+    width: 100%;
+}
+
+
 /* media query */
 @media(max-width: 700px){
   .text-box h1{
