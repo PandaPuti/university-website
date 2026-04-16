@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduford University Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <!-- Header Section -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="university logo">
+      </a>
+      <div class="nav-links"  id="navLinks">
+        <i class="fa-solid fa-xmark" style="color: #fff;" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Certificate and Online Programs</h1>
+  </section>
+
+  <!-- Blog page section -->
+   <section class="blog-content">
+    <div class="row">
+      <div class="blog-left">
+        <img src="images/certificate.jpg" alt="certificate program image">
+        <h2>Our Certificate and Online Programs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed labore itaque cum autem, doloremque dicta quae dolores quasi atque tempora. Nobis reiciendis vel nemo, earum, itaque ipsa beatae non odio corrupti perspiciatis, sapiente inventore explicabo? Accusantium quas explicabo id.</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit iure, et voluptatibus inventore, hic consectetur aliquam vel ut fuga accusantium necessitatibus quod aspernatur repellendus est nostrum rem nobis, eveniet suscipit eaque! Sunt voluptas facilis voluptatum similique reiciendis consectetur consequuntur inventore nulla dolorem possimus recusandae itaque fuga eum saepe voluptatibus nisi consequatur alias, in repudiandae aut ex. Reiciendis similique doloribus debitis.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus est, architecto aspernatur quia, repellendus dolorum eius reprehenderit dolore laborum eligendi alias ipsa quam eaque asperiores sint cumque natus dolorem porro.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas harum qui cumque excepturi consectetur laudantium soluta maxime inventore laboriosam ad voluptate aut asperiores ipsa voluptates molestias nam quibusdam fugiat amet nobis, eveniet distinctio placeat delectus totam modi. Ducimus eveniet cumque maxime, qui cupiditate molestias cum odit, accusantium quaerat doloremque delectus iusto consectetur placeat, vero quia necessitatibus eius odio rem optio unde. Quasi minus rem aut tenetur fugiat fuga minima omnis?</p>
+
+        <div class="comment-box">
+          <h3>Leave a comment</h3>
+          <form class="comment-form">
+            <input type="text" name="" id="" placeholder="Enter name">
+            <input type="email" name="" id="" placeholder="Enter email">
+            <textarea name="" id="" rows="5"></textarea>
+            <button type="submit" class="hero-btn red-btn">Post Comment</button>
+          </form>
+        </div>
+      </div>
+      <div class="blog-right">
+        <h3>Post categories</h3>
+        <div>
+          <span>Business Analytics</span>
+          <span>21</span>
+        </div>
+        <div>
+          <span>Data Analytics</span>
+          <span>18</span>
+        </div>
+        <div>
+          <span>Machine Learning</span>
+          <span>29</span>
+        </div>
+        <div>
+          <span>Generative AI and LLM</span>
+          <span>12</span>
+        </div>
+        <div>
+          <span>Prompt Engineering</span>
+          <span>8</span>
+        </div>
+        <div>
+          <span>Web Devlopment</span>
+          <span>16</span>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- footer section -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam explicabo similique, iste dolorum veritatis quos illo!<br> Eum deleniti officiis, impedit iure ipsa et non facere cupiditate quos sint voluptatibus.</p>
+    <div class="icons">
+      <i class="fa-brands fa-square-facebook fa-xl"></i>
+      <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+      <i class="fa-brands fa-instagram fa-xl"></i>
+      <i class="fa-brands fa-linkedin fa-xl"></i>
+    </div>
+  </section>
+  <script>
+    const menuItems = document.getElementById("navLinks");
+    function showMenu(){
+      menuItems.style.right = "0";
+    }
+    function hideMenu(){
+      menuItems.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
