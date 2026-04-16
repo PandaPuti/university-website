@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduford University Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <!-- Header Section -->
+  <section class="sub-header">
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="university logo">
+      </a>
+      <div class="nav-links"  id="navLinks">
+        <i class="fa-solid fa-xmark" style="color: #fff;" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the world's largest university</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facere cum molestiae suscipit unde, velit perferendis, numquam labore nostrum odio impedit? Dolores officiis reiciendis libero molestias velit cum esse. Quasi!</p>
+        <a href="" class="hero-btn red-btn"> Explore Now</a>
+      </div>
+      <div class="about-col">
+        <img src="images/about.jpg" alt="about us page image">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- footer section -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam explicabo similique, iste dolorum veritatis quos illo!<br> Eum deleniti officiis, impedit iure ipsa et non facere cupiditate quos sint voluptatibus.</p>
+    <div class="icons">
+      <i class="fa-brands fa-square-facebook fa-xl"></i>
+      <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+      <i class="fa-brands fa-instagram fa-xl"></i>
+      <i class="fa-brands fa-linkedin fa-xl"></i>
+    </div>
+  </section>
+  <script>
+    const menuItems = document.getElementById("navLinks");
+    function showMenu(){
+      menuItems.style.right = "0";
+    }
+    function hideMenu(){
+      menuItems.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
